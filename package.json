@@ -1,0 +1,32 @@
+{
+  "name": "purchaseorder",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "dependencies": {
+    "3": "^2.1.0",
+    "@cap-js/hana": "^2",
+    "@sap/cds": "^9",
+    "express": "^4",
+    "sqlite": "^5.1.1"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2",
+    "cds-plugin-ui5": "^0.13.0"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-purchaseorder": "cds watch --open com.ust.purchaseorder.purchaseorder/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-purchaseorder-poitems": "cds watch --open com.ust.purchaseorder.purchaseorderpoitems/index.html?sap-ui-xx-viewCache=false --livereload false"
+  },
+  "private": true,
+  "workspaces": [
+    "app/*"
+  ],
+  "sapux": [
+    "app/purchaseorder",
+    "app/purchaseorder",
+    "app/purchaseorder-poitems",
+    "app/purchaseorder-poitems"
+  ],
+  "cds": {}
+}
